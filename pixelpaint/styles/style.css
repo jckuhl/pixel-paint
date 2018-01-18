@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 html,
 body {
@@ -13,6 +14,24 @@ ul li {
 	margin: 20px 0;
 	padding: 0 0;
 	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	text-shadow: 1px 1px white;
+}
+
+a:visited, a:link {
+	color: black;
+}
+
+a:hover {
+	color: #cc0a37;
+	text-shadow: none;
+}
+
+a:active {
+	text-shadow: none;
 }
 
 button, 
@@ -33,6 +52,10 @@ button {
 }
 
 /*#cc0a37*/
+
+* {
+	box-sizing: border-box;
+}
 
 button:hover {
 	color: #cc0a37;
@@ -55,9 +78,11 @@ h1 {
 	width: 20%;
 	height: 100vh;
 	float: left;
-	background-color: #1c5d60;
+	background-color: #2f999e;
 	margin: 0;
 	display: inline-block;
+	box-shadow: 0 0 50px #1c5d60;
+	font-family: 'Permanent Marker', cursive;
 }
 
 #wrapper {
@@ -75,6 +100,7 @@ input[type="number"] {
 	font-family: 'Pacifico', cursive;
 	border: 2px solid #1c5d60;
 	outline: 0;
+	display: inline-block;
 }
 
 #playArea {
@@ -108,16 +134,15 @@ input[type="number"] {
 .square {
 	cursor: pointer;
 	position: absolute;
+	margin: 0 0;
 	z-index: 5000;
 }
 
-footer {
-	display: inline-block;
-	float: right;
-	width: 25%;
-	text-align: right;
-	padding-right: 10px;
+#copy {
 	font-size: 0.75em;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
 }
 
 #warning {

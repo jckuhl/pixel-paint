@@ -9,7 +9,7 @@
 			const squareWidth = 500 / gridsize;
 			const numSquares = gridsize * gridsize;
 		} else {
-
+			
 		}	
 	})
 
