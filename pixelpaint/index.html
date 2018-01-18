@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Pixel Paint
+	</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<div id="sidebar">
+		<ul>
+			<li>View on Github!</li>
+			<li>My Blog at Project Breakpoint!</li>
+		</ul>
+	</div>
+	<div id="wrapper">
+		<h1>Welcome to Pixel Paint</h1>
+
+		<button id="random-color">Random Color</button>
+		<button id="pick-color">Pick A Color</button>
+		<div id="cl_square">&nbsp;</div>
+		<button id="reset">Reset</button>
+
+		<p><label for="gridsize">How many rows do you want?</label>
+			<input type="number" name="gridsize" id="gridsize" min="0" max="10" maxlength="3">
+			<button id="create">Create!</button>
+		</p>
+
+		<div id="playArea">
+
+		</div>
+
+	</div>
+	<footer>
+		<p>&copy; 2018 Jonathan Kuhl</p>
+	</footer>
+	<script type="text/javascript" src="scripts/pixel.js"></script>
+
+</body>
+</html>

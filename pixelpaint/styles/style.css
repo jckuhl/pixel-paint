@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+html,
+body {
+	width: 100%;
+	margin: 0 0;
+	padding: 0 0;
+	background-color: #3bced6;
+	font-family: 'Pacifico', cursive;
+}
+
+ul li {
+	margin: 20px 0;
+	padding: 0 0;
+	list-style: none;
+}
+
+button, 
+p {
+	font-size: 1.25em;
+	font-family: 'Pacifico', cursive;
+	text-shadow: 1px 1px white;
+}
+
+button {
+	cursor: pointer;
+	display: inline-block;
+	background-color: #4cf5ff;
+	border: 2px solid #1c5d60;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px #1c5d60;
+	outline: 0;
+}
+
+/*#cc0a37*/
+
+button:hover {
+	color: #cc0a37;
+	border: 2px solid #cc0a37;
+}
+
+button:active {
+	color: #ff5179;
+	border: 2px solid #ff5179;
+	box-shadow: none;
+}
+
+h1 {
+	margin-top: 0;
+	padding-top: 10px;
+	text-shadow: 3px 3px white;
+}
+
+#sidebar {
+	width: 20%;
+	height: 100vh;
+	float: left;
+	background-color: #1c5d60;
+	margin: 0;
+	display: inline-block;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 45%;
+	min-height: 100%;
+	text-align: center;
+	display: block;
+}
+
+input[type="number"] {
+	font-size: 1.0em;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: 'Pacifico', cursive;
+	border: 2px solid #1c5d60;
+	outline: 0;
+}
+
+#playArea {
+	width: 500px;
+	height: 500px;
+	border: 2px solid #1c5d60;
+	box-shadow: 0 0 50px #1c5d60;
+	background-color: white;
+	/*position: absolute;*/
+	display: block;
+	margin: 0 auto;
+	/*left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);*/
+	margin-top: 0.5%;
+	z-index: 1000;
+}
+
+#cl_square {
+	content: "";
+	width: 20px;
+	height: 20px;
+	min-width: 20px;
+	min-height: 20px;
+	display: inline-block;
+	background-color: blue;
+	border: 2px solid #1c5d60;
+	box-shadow: 2px 2px 2px #1c5d60;
+}
+
+.square {
+	cursor: pointer;
+	position: absolute;
+	z-index: 5000;
+}
+
+footer {
+	display: inline-block;
+	float: right;
+	width: 25%;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 0.75em;
+}
+
+#warning {
+	color: #cc0a37;
+	background-color: #ffe2e9;
+	font-size: 1.50em;
+	font-family: 'Pacifico', cursive;
+	border: 2px solid #cc0a37;
+	border-radius: 15px;
+	position: absolute;
+	z-index: 9000;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+
