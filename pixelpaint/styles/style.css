@@ -35,7 +35,7 @@ a:active {
 }
 
 button, 
-p {
+p, label[for="color-picker"] {
 	font-size: 1.25em;
 	font-family: 'Pacifico', cursive;
 	text-shadow: 1px 1px white;
@@ -101,6 +101,7 @@ input[type="number"] {
 	border: 2px solid #1c5d60;
 	outline: 0;
 	display: inline-block;
+    max-width: 100px;
 }
 
 #playArea {
@@ -109,12 +110,12 @@ input[type="number"] {
 	border: 2px solid #1c5d60;
 	box-shadow: 0 0 50px #1c5d60;
 	background-color: white;
-	/*position: absolute;*/
-	display: block;
+	position: absolute;
+	
 	margin: 0 auto;
-	/*left: 50%;
+	left: 50%;
 	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);*/
+	transform: translateX(-50%);
 	margin-top: 0.5%;
 	z-index: 1000;
 }
@@ -135,6 +136,12 @@ input[type="number"] {
 	cursor: pointer;
 	position: absolute;
 	margin: 0 0;
+	width: 20px;
+	height: 20px;
+	min-width: 20px;
+	min-height: 20px;
+	background-color: white;
+	border: 2px solid black;
 	z-index: 5000;
 }
 
@@ -147,15 +154,20 @@ input[type="number"] {
 
 #warning {
 	color: #cc0a37;
+	width: 350px;
 	background-color: #ffe2e9;
-	font-size: 1.50em;
+	font-size: 1.25em;
 	font-family: 'Pacifico', cursive;
 	border: 2px solid #cc0a37;
 	border-radius: 15px;
 	position: absolute;
+	top: 200px;
 	z-index: 9000;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%)
+	padding: 10px 10px;
+	visibility: hidden;
+	box-shadow: 2px 2px 5px #cc0a37;
 }
 

@@ -19,9 +19,9 @@
 	<div id="wrapper">
 		<h1>Welcome to Pixel Paint</h1>
 
+		<label for="color-picker">Pick A Color:</label> 
+		<input type="color" id="color-picker" name="color-picker">
 		<button id="random-color">Random Color</button>
-		<button id="pick-color">Pick A Color</button>
-		<div id="cl_square">&nbsp;</div>
 		<button id="reset">Reset</button>
 
 		<p><label for="gridsize">How many rows do you want?</label>
@@ -33,6 +33,11 @@
 
 		</div>
 
+	</div>
+
+	<div id="warning">
+		<p>Please enter a valid number</p>
+		<p>Between 1 - 10 <button id="warning-btn" disabled>Ok</button></p>
 	</div>
 	<script type="text/javascript" src="scripts/pixel.js"></script>
 
