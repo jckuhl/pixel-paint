@@ -4,6 +4,8 @@
 html,
 body {
 	width: 100%;
+	height: auto;
+	min-height: 100% !important;
 	margin: 0 0;
 	padding: 0 0;
 	background-color: #3bced6;
@@ -51,8 +53,6 @@ button {
 	outline: 0;
 }
 
-/*#cc0a37*/
-
 * {
 	box-sizing: border-box;
 }
@@ -80,9 +80,10 @@ h1 {
 	float: left;
 	background-color: #2f999e;
 	margin: 0;
-	display: inline-block;
-	box-shadow: 0 0 50px #1c5d60;
+	display: block;
+	box-shadow: 10px 0 50px 0 #1c5d60;
 	font-family: 'Permanent Marker', cursive;
+	overflow: auto;
 }
 
 #wrapper {
