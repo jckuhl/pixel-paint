@@ -1,7 +1,8 @@
-/*Pixel Painter
-
-
-2018 Jonathan Kuhl */
+/**
+* Pixel Painter
+* Creates A Grid of Pixels Users can click on to paint with
+* 2018 Jonathan Kuhl 
+*/
 
 (function() {
 	const playArea = document.getElementById("playArea");
@@ -18,16 +19,32 @@
 	let gridArray = [];
 	let currentColor = "#2f999e";	//default to one of the theme colors
 
+	/**
+	* Basic random function
+	* @param {number} min - the small random bound, inclusive
+	* @param {number} max - the large random bound, inclusive
+	* @return {number} - random number
+	*/
+
 	function random(min, max) {
    		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-	//return a hex value from an rgb value
+	/**
+	* Hex function
+	* Turns a single RGB value into a Hex value
+	* Allows us to convert rgb() to hex for use with a color picker
+	* @param {number} rgb - a color value to be converted
+	* @return {string} - a hex value
+	*/
 	function hex(rgb) {
 		let hex = rgb.toString(16);
 		return hex.length == 1 ? "0" + hex : hex;
 	}
 
+	/**
+	* Removes the grid from the board
+	*/
 	function reset() {
 		gridArray.forEach( (sq)=> body.removeChild(sq) );
 		gridArray = [];
@@ -39,7 +56,7 @@
 		currentColor = colorPicker.value;
 	});
 
-	//reset the grid to white
+	
 	clearBtn.addEventListener("click", ()=> {
 		gridsizeInput.value = "";
 		if(gridArray !== []) {
@@ -81,7 +98,7 @@
 				});
 				gridArray.push(square);
 				pos_x += squareWidth;
-				row++
+				row++;
 				if(Math.pow(row,2) === numSquares) {
 					row = 0;
 					pos_y += squareWidth;
